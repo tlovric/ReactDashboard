@@ -1,13 +1,13 @@
 import "./sidebar.css"
-import { LineStyle, Timeline, TrendingUp } from "@mui/icons-material"
-
+import { LineStyle, Timeline, TrendingUp, PersonOutline, WorkOutline, DynamicFeed } from "@mui/icons-material"
+import {ChatBubbleOutline, Storefront, Report, MailOutline, AttachMoney, BarChart}from '@mui/icons-material';
 export default function Sidebar() {
   return (
     <div className="sidebar">
         <div className="sidebarWrapper">
             <div className="sidebarMenu">
                 <h3 className="sidebarTitle">Dashboard</h3>
-                <ul className="sidebarList">
+               <ul className="sidebarList">
                     <li className="sidebarListItem active">
                         <LineStyle className="sidebarIcon"/>
                         Home
@@ -26,16 +26,20 @@ export default function Sidebar() {
                 <h3 className="sidebarTitle">Quick Menu</h3>
                 <ul className="sidebarList">
                     <li className="sidebarListItem active">
-                        <LineStyle className="sidebarIcon"/>
-                        Home
+                        <PersonOutline className="sidebarIcon"/>
+                        Users
                     </li>
                     <li className="sidebarListItem">
-                        <Timeline className="sidebarIcon"/>
-                        Analytics
+                        <Storefront className="sidebarIcon"/>
+                        Products
                     </li>
                     <li className="sidebarListItem">
-                        <TrendingUp className="sidebarIcon"/>
-                        Sales
+                        <AttachMoney className="sidebarIcon"/>
+                        Transactions
+                    </li>
+                    <li className="sidebarListItem">
+                        <BarChart className="sidebarIcon"/>
+                        Reports
                     </li>
                 </ul>
             </div>
@@ -43,16 +47,16 @@ export default function Sidebar() {
                 <h3 className="sidebarTitle">Notifications</h3>
                 <ul className="sidebarList">
                     <li className="sidebarListItem active">
-                        <LineStyle className="sidebarIcon"/>
-                        Home
+                        <MailOutline className="sidebarIcon"/>
+                        Mail
                     </li>
                     <li className="sidebarListItem">
-                        <Timeline className="sidebarIcon"/>
-                        Analytics
+                        <DynamicFeed className="sidebarIcon"/>
+                        Feedback
                     </li>
                     <li className="sidebarListItem">
-                        <TrendingUp className="sidebarIcon"/>
-                        Sales
+                        <ChatBubbleOutline className="sidebarIcon"/>
+                        Messages
                     </li>
                 </ul>
             </div>
@@ -60,16 +64,16 @@ export default function Sidebar() {
                 <h3 className="sidebarTitle">Staff</h3>
                 <ul className="sidebarList">
                     <li className="sidebarListItem active">
-                        <LineStyle className="sidebarIcon"/>
-                        Home
+                        <WorkOutline className="sidebarIcon"/>
+                        Manage
                     </li>
                     <li className="sidebarListItem">
                         <Timeline className="sidebarIcon"/>
                         Analytics
                     </li>
                     <li className="sidebarListItem">
-                        <TrendingUp className="sidebarIcon"/>
-                        Sales
+                        <Report className="sidebarIcon"/>
+                        Reports
                     </li>
                 </ul>
             </div>
@@ -77,3 +81,4 @@ export default function Sidebar() {
     </div>
   )
 }
+
